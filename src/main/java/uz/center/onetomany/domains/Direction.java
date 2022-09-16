@@ -17,11 +17,9 @@ public class Direction {
     private Long id;
 
     @Column(name = "name")
-    @NotNull
     private String name;
 
     @Column(name = "description")
-    @NotNull
     private String description;
 
     @OneToOne(mappedBy = "direction")
