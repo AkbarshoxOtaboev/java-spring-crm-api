@@ -17,7 +17,7 @@ public class Teacher {
 
     private String fullName;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToOne(cascade = CascadeType.DETACH, fetch = FetchType.EAGER)
     @JoinColumn(name = "direction_id")
     private Direction direction;
 
